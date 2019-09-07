@@ -69,7 +69,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="/var/www/dsa/public/storage/profile_pics/{{ $user->profile_pic}}" alt=""/>
+                            <img src="{{ URL::to('storage/profile_pics/{{ $user->profile_pic}}') }}" alt=""/>
 
                         </div>
                     </div>
