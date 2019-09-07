@@ -123,16 +123,16 @@
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                              
+
                                  @if(!$notes->count())
 
                                 <p>there no slides yet</p>
-    
+
                                @endif
                                 <table class="table" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            
+
                                             <th>Course unit</th>
                                             <th>Author</th>
                                             <th>download</th>
@@ -143,24 +143,24 @@
                                         <tr>
                                             <td>{{$slide->course_unit}}</td>
                                             <td>{{Auth::user()->getNameOrUsername()}}</td>
-                                            <td> <a href="/social/public/storage/notes/{{$slide->file_name}}">{{$slide->file_name}}</a></td>
+                                            <td> <a href="/dsa/public/storage/notes/{{$slide->file_name}}">{{$slide->file_name}}</a></td>
                                         </tr>
-                                        
+
                                     </tbody>
                                     @endforeach
                                 </table>
-                                
+
                             </div>
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                <table class="table" cellspacing="0">
                                @if(!$textbooks->count())
 
                                 <p>there no text books yet</p>
-                               
+
                                @endif
                                     <thead>
                                         <tr>
-                                            
+
                                             <th>Course unit</th>
                                             <th>Author</th>
                                             <th>download</th>
@@ -171,9 +171,9 @@
                                         <tr>
                                             <td>{{$book->course_unit}}</td>
                                             <td>{{Auth::user()->getNameOrUsername()}}</td>
-                                            <td> <a href="/social/public/storage/notes/{{$book->file_name}}">{{$book->file_name}}</a></td>
+                                            <td> <a href="/dsa/public/storage/notes/{{$book->file_name}}">{{$book->file_name}}</a></td>
                                         </tr>
-                                        
+
                                     </tbody>
                                     @endforeach
                                 </table>

@@ -79,7 +79,7 @@
           <ul class="list-unstyled friend-list">
             <li class="active grey lighten-3 p-2">
               <a href="{{route('message.conversation',['username'=>$user->username])}}" class="d-flex justify-content-between">
-                <img src="/social/public/storage/profile_pics/{{$user->profile_pic}}"  alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                <img src="/dsa/public/storage/profile_pics/{{$user->profile_pic}}"  alt="avatar" class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
                 <div class="text-small">
                   <strong> {{ $user->username }}</strong></a>
                   @if($user->year)

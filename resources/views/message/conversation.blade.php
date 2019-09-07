@@ -31,7 +31,7 @@
     <input type="file" name="file">
         </div>
          <button type="submit" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">send Message </button>
-         
+
     <input type="hidden" name="_token" value="{{ Session::token()}}">
 </form>
 </div>
@@ -49,7 +49,7 @@
 
           <ul class="list-unstyled chat">
             <li class="d-flex justify-content-between mb-4">
-              <img src="/social/public/storage/profile_pics/{{($message->user_id==Auth::user()->id) ? Auth::user()->profile_pic:$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
+              <img src="/dsa/public/storage/profile_pics/{{($message->user_id==Auth::user()->id) ? Auth::user()->profile_pic:$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
               <div class="chat-body white p-3 ml-2 z-depth-1">
                 <div class="header">
                   <strong class="primary-font">{{($message->user_id==Auth::user()->id) ? Auth::user()->getNameOrUsername() : $user->getNameOrUsername()}} </strong>
@@ -60,7 +60,7 @@
                {{ $message->message}}
                 </p>
                 @if($message->file_name)
-            <p > <a href="/social/public/storage/files/{{$message->file_name}}">{{$message->file_name}}</a></p>
+            <p > <a href="/dsa/public/storage/files/{{$message->file_name}}">{{$message->file_name}}</a></p>
             @endif
               </div>
             </li>
@@ -91,7 +91,7 @@
     <input type="file" name="file">
         </div>
          <button type="submit" class="btn btn-info btn-rounded btn-sm waves-effect waves-light float-right">send Message </button>
-         
+
     <input type="hidden" name="_token" value="{{ Session::token()}}">
 </form>
 </div>

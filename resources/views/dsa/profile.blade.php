@@ -69,7 +69,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="/social/public/storage/profile_pics/{{ $user->profile_pic}}" alt=""/>
+                            <img src="/dsa/public/storage/profile_pics/{{ $user->profile_pic}}" alt=""/>
 
                         </div>
                     </div>
