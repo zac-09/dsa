@@ -49,7 +49,7 @@
 
           <ul class="list-unstyled chat">
             <li class="d-flex justify-content-between mb-4">
-              <img src="/dsa/public/storage/profile_pics/{{($message->user_id==Auth::user()->id) ? Auth::user()->profile_pic:$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
+              <img src="http://157.245.79.198/storage/profile_pics/{{($message->user_id==Auth::user()->id) ? Auth::user()->profile_pic:$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
               <div class="chat-body white p-3 ml-2 z-depth-1">
                 <div class="header">
                   <strong class="primary-font">{{($message->user_id==Auth::user()->id) ? Auth::user()->getNameOrUsername() : $user->getNameOrUsername()}} </strong>
@@ -60,7 +60,7 @@
                {{ $message->message}}
                 </p>
                 @if($message->file_name)
-            <p > <a href="/dsa/public/storage/files/{{$message->file_name}}">{{$message->file_name}}</a></p>
+            <p > <a href="http://157.245.79.198/storage/files/{{$message->file_name}}">{{$message->file_name}}</a></p>
             @endif
               </div>
             </li>

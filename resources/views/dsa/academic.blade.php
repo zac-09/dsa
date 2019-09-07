@@ -171,7 +171,7 @@
                                         <tr>
                                             <td>{{$book->course_unit}}</td>
                                             <td>{{Auth::user()->getNameOrUsername()}}</td>
-                                            <td> <a href="/dsa/public/storage/notes/{{$book->file_name}}">{{$book->file_name}}</a></td>
+                                            <td> <a href="http://157.245.79.198/storage/notes/{{$book->file_name}}">{{$book->file_name}}</a></td>
                                         </tr>
 
                                     </tbody>
