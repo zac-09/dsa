@@ -69,7 +69,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                                <img src="{{ URL::to('storage/profile_pics/zac_1567858317.jpg') }}"/>
+                                <img src="{{ URL::to('storage/profile_pics/$user->profile_pic') }}" />
                             {{--  <img src="{{ URL::to('storage/profile_pics/{{$user->profile_pic}}') }}" alt=""/>  --}}
 
                         </div>
