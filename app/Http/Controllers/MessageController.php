@@ -10,7 +10,7 @@ class MessageController extends Controller{
 
 public function index(){
     $friends = Auth::user()->friends();
-    $users = DB::table('users')->get()->paginate(10);
+    $users = DB::table('users')->get();
     return view('dsa.messages')->with('users',$users);
 }
 
