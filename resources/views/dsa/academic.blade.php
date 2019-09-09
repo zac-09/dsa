@@ -143,7 +143,7 @@
                                         <tr>
                                             <td>{{$slide->course_unit}}</td>
                                             <td>{{Auth::user()->getNameOrUsername()}}</td>
-                                            <td> <a href="/dsa/public/storage/notes/{{$slide->file_name}}">{{$slide->file_name}}</a></td>
+                                            <td> <a href="http://157.245.79.198/storage/notes/{{$slide->file_name}}">{{$slide->file_name}}</a></td>
                                         </tr>
 
                                     </tbody>
