@@ -16,8 +16,8 @@ class AuthController extends Controller{
             'password'=>'required|min:6',
             'first_name'=>'required|',
             'last_name'=>'required|',
-            
-            
+
+
         ]);
         User::create([
             'email'=>$request->input('email'),
@@ -26,6 +26,7 @@ class AuthController extends Controller{
             'first_name'=>$request->input('first_name'),
             'last_name'=>$request->input('last_name'),
             'year'=>$request->input('year'),
+            'profile_pic'=>'no_image.jpg'
         ]);
         return redirect()->route('home')->with('info','your account has been created you can now sign in');
     }

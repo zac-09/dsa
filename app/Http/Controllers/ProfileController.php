@@ -46,8 +46,7 @@ class ProfileController extends Controller{
     }
     else{
 
-        $fileNameToStore = 'no_image_1565853915.jpg
-        ';
+        $fileNameToStore = 'no_image.jpg';
     }
 
          DB::table('users')->where('username',Auth::user()->username)->update([
