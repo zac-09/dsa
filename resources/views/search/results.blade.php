@@ -69,8 +69,8 @@
     <p>no Reuslts found , sorry</p>
 @else
         @foreach($users as $user)
-       
-        
+
+
               {{-- <img src="/social/public/storage/profile_pics/{{$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1">
               <div class="chat-body white p-3 ml-2 z-depth-1">
                 <div class="header">
@@ -83,11 +83,11 @@
 
           <div class="col-lg-3 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="/social/public/storage/profile_pics/{{$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1" class="img-fluid" alt="">
+              <img src="https://dsamulago.com/storage/profile_pics/{{$user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-2 ml-lg-3 ml-0 z-depth-1" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  
-                
+
+
                 </div>
                  <h4 class="primary-font"><a href="{{route('profile.index',['username'=>$user->username])}}">{{ $user->getNameOrUsername()}}</a> </h4>
                  <h4>{{$user->profession}}</h4>
@@ -95,7 +95,7 @@
             </div>
           </div>
 
-        
+
         @endforeach
 @endif
 </body>

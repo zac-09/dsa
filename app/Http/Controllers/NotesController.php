@@ -9,7 +9,7 @@ class NotesController extends Controller{
 
 
 
-   
+
     public function index(){
         $notes = DB::table('notes')->where('type','slides')->orWhere('type','notes')->get();
         $textbooks  = DB::table('notes')->where('type','Text-books')->get();
@@ -43,6 +43,7 @@ class NotesController extends Controller{
         'type'=>$request->input('type'),
         'user_id'=>Auth::user()->id,
         'course_unit'=>$request->input('course_unit'),
+        'author'=>Auth::user()->username,
         'file_name'=> $fileNameToStore
     ]);
     return redirect()->back()->with('info','your work has beeen uploded');

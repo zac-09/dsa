@@ -10,8 +10,7 @@ class HomeController extends Controller{
 
         if(Auth::check()){
             $statuses = Status::where(function($query){
-                    return $query->notReply()->where('user_id',Auth::user()->id)->
-                    orWhereIn('user_id',Auth::user()->friends()->pluck('id'));
+                    return $query->notReply()->where('id','>',1);
             })->orderBY('created_at','desc')->paginate(10);
 
 

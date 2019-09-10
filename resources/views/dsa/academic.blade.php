@@ -142,7 +142,7 @@
                                     <tbody>
                                         <tr>
                                             <td>{{$slide->course_unit}}</td>
-                                            <td>{{Auth::user()->getNameOrUsername()}}</td>
+                                            <td>{{ $slide->author }}</td>
                                             <td> <a href="https://dsamulago.com/storage/notes/{{$slide->file_name}}">{{$slide->file_name}}</a></td>
                                         </tr>
 
@@ -170,7 +170,7 @@
                                     <tbody>
                                         <tr>
                                             <td>{{$book->course_unit}}</td>
-                                            <td>{{Auth::user()->getNameOrUsername()}}</td>
+                                            <td>{{ $book->author }}</td>
                                             <td> <a href="https://dsamulago.com/storage/notes/{{$book->file_name}}">{{$book->file_name}}</a></td>
                                         </tr>
 

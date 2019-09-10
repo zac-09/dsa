@@ -164,7 +164,7 @@
           <div class="col-lg-6  wow fadeInUp">
 <div class="container">
 
-              <img src="http://157.245.79.198/storage/profile_pics/{{$status->user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-1 ml-lg-2 ml-0 z-depth-1" class="img-fluid" alt="">
+              <img src="https://dsamulago.com/storage/profile_pics/{{$status->user->profile_pic}}" alt="avatar" class="avatar rounded-circle mr-1 ml-lg-2 ml-0 z-depth-1" class="img-fluid" alt="">
 
 </div>
                 </div>

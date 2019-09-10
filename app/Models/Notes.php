@@ -7,7 +7,8 @@ protected $fillable= [
             'user_id',
             'file_name',
             'type',
-            'course_unit'];
+            'course_unit',
+               'author'     ];
 
 public function user(){
     return $this->belongsTo('social\Models\User','user_id');
