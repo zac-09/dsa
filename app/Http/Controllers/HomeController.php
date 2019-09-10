@@ -15,8 +15,9 @@ class HomeController extends Controller{
 
 
             //return view('dsa.index')->with('statuses',$statuses);
+            return view('dsa.index')->with('statuses',$statuses);
         }
-        return view('dsa.index')->with('statuses',$statuses);
+
 
 
 
