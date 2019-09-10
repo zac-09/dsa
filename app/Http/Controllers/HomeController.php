@@ -14,7 +14,7 @@ class HomeController extends Controller{
             })->orderBY('created_at','desc')->paginate(10);
 
 
-
+            return view('dsa.index')->with('statuses');
         }
         return view('dsa.index')->with('statuses');
 
