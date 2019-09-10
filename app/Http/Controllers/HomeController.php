@@ -10,8 +10,7 @@ class HomeController extends Controller{
 
         if(Auth::check()){
             $statuses = Status::where(function($query){
-                    return $query->notReply()->where('user_id',Auth::user()->id);
-            })->orderBY('created_at','desc')->paginate(10);
+                return $query->notReply();})->orderBY('created_at', 'desc')->paginate(10);
 
 
             //return view('dsa.index')->with('statuses',$statuses);
