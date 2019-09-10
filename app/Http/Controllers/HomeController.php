@@ -8,12 +8,12 @@ class HomeController extends Controller{
         $statuses = Status::where(function($query){
             return $query->notReply();})->orderBY('created_at', 'desc')->paginate(10);
 
-        if(Auth::check()){
-            $statuses = Status::all()->orderBY('created_at','desc')->paginate(10);
+        // if(Auth::check()){
+        //     $statuses = Status::all()->orderBY('created_at','desc')->paginate(10);
 
 
-            return view('dsa.index')->with('statuses',$statuses);
-        }
+        //     return view('dsa.index')->with('statuses',$statuses);
+        // }
         return view('dsa.index')->with('statuses',$statuses);
 
 
