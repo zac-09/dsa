@@ -69,7 +69,7 @@
 
         <h6 class="font-weight-bold mb-3 text-center text-lg-left">Messages</h6>
         @if(!$users->count())
-        <p> you have no friends</p>
+        <p> you have zero friends</p>
         @else
 
 
