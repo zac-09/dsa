@@ -90,7 +90,21 @@
 
 
 <!-- Navbar end -->
-
+<!-- Default Statcounter code for mulago  -->
+<script type="text/javascript">
+var sc_project=12146592;
+var sc_invisible=0;
+var sc_security="d7fc8729";
+var sc_https=1;
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12146592/0/d7fc8729/0/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
 
   <!--==========================
